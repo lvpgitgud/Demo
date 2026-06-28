@@ -39,7 +39,7 @@ export class SolarPanel {
                 color: 0x1a2f5a,
                 shininess: 100,
             });
-        var texture = new THREE.TextureLoader().load('./src/assets/solar_panel_texture.jpeg');
+        var texture = new THREE.TextureLoader().load('/assets/solar_panel_texture.jpeg');
         panelMaterial.map = texture;
 
         // Solar panel

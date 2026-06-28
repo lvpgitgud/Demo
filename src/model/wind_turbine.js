@@ -41,7 +41,7 @@ export class WindTurbine {
 
     async load() {
         const gltfLoader = new GLTFLoader();
-        const gltf = await gltfLoader.loadAsync('./src/assets/scene.gltf');
+        const gltf = await gltfLoader.loadAsync('/assets/scene.gltf');
         //TODO: THIS MODEL NORMALS ARE FUCKED UP
         gltf.scene.traverse((child) => {
           console.log(child)

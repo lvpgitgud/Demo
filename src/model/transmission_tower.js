@@ -25,7 +25,7 @@ export class TransmissionTower {
         });
 
         const object = await objLoader.loadAsync(
-            './src/assets/17492_Electricity_Transmission_Tower_v1.obj'
+            '/assets/17492_Electricity_Transmission_Tower_v1.obj'
         );
 
         object.rotateX(-Math.PI / 2);

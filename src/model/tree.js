@@ -18,14 +18,14 @@ export class Tree {
         const objLoader = new OBJLoader();
 
         const materials = await mtlLoader.loadAsync(
-            './src/assets/Tree/Tree.mtl'
+            '/assets/Tree/Tree.mtl'
         );
 
         materials.preload();
         objLoader.setMaterials(materials);
 
         const object = await objLoader.loadAsync(
-            './src/assets/Tree/Tree.obj'
+            '/assets/Tree/Tree.obj'
         );
 
         object.traverse((child) => {

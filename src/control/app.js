@@ -67,7 +67,7 @@ export class App {
         
         const geometry = new THREE.PlaneGeometry( 1, 1 );
         const material = new THREE.MeshPhongMaterial( {color: 0x999999, side: THREE.DoubleSide} );
-        var texture = new THREE.TextureLoader().load('./src/assets/grass.jpg');
+        var texture = new THREE.TextureLoader().load('/assets/grass.jpg');
         texture.wrapS = THREE.RepeatWrapping;
         texture.wrapT = THREE.RepeatWrapping;
         texture.repeat.set( 10, 10 );
